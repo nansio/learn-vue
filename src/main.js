@@ -24,6 +24,10 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
+Vue.directive('blinking', function(el, binding) {
+  el.classList.add('bg-gradient')
+})
+
 new Vue({
   el: '#app',
   router,

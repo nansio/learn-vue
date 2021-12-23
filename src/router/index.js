@@ -73,6 +73,12 @@ export const constantRoutes = [
         name: 'CustomDirectives',
         component: () => import('@/views/reusability/directives'),
         meta: { title: '自定义指令', icon: 'tree' }
+      },
+      {
+        path: 'render-function_jsx',
+        name: 'RenderFunction_JSX',
+        component: () => import('@/views/reusability/renderFunction'),
+        meta: { title: '渲染函数 & JSX', icon: 'tree' }
       }
     ]
   },
