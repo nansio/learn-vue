@@ -154,6 +154,24 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/animations',
+    component: Layout,
+    redirect: '/animations/typing-text',
+    name: 'animations',
+    meta: {
+      title: '动画',
+      icon: 'el-icon-magic-stick'
+    },
+    children: [
+      {
+        path: 'typing-text',
+        component: () => import('@/views/animations/typing'),
+        name: 'typing-text',
+        meta: { title: '打字动画' }
+      }
+    ]
+  },
 
   {
     path: 'external-link',
