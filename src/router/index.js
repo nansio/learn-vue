@@ -65,13 +65,13 @@ export const constantRoutes = [
       {
         path: 'mixins',
         name: 'Mixins',
-        component: () => import('@/views/reusability/mixins'),
+        component: () => import('@/views/reusability/MixinDemo'),
         meta: { title: '混入', icon: 'table' }
       },
       {
         path: 'custom-directives',
         name: 'CustomDirectives',
-        component: () => import('@/views/reusability/directives'),
+        component: () => import('@/views/reusability/Directives/directives'),
         meta: { title: '自定义指令', icon: 'tree' }
       },
       {
@@ -169,17 +169,6 @@ export const constantRoutes = [
         component: () => import('@/views/animations/typing'),
         name: 'typing-text',
         meta: { title: '打字动画' }
-      }
-    ]
-  },
-
-  {
-    path: 'external-link',
-    component: Layout,
-    children: [
-      {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-        meta: { title: 'External Link', icon: 'link' }
       }
     ]
   },
