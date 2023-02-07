@@ -24,6 +24,9 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
+import VideoPlayer from '@/components/VideoPlayer/index'
+Vue.use(VideoPlayer)
+
 Vue.directive('blinking', function(el, binding) {
   el.classList.add('bg-gradient')
 })
